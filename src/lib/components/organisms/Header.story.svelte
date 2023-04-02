@@ -7,15 +7,11 @@
 </script>
 
 <Hst.Story title="Organisms/Header" layout={{ type: 'single', iframe: true }}>
-	<Hst.Variant title="Animated Logo">
+	<Hst.Variant title="Transparent Background">
 		<Header />
 	</Hst.Variant>
 
-	<Hst.Variant title="Static Logo">
-		<Header animated={false} />
-	</Hst.Variant>
-
 	<Hst.Variant title="With Background">
-		<Header showBackground={true} />
+		<Header showBackground />
 	</Hst.Variant>
 </Hst.Story>

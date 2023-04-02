@@ -1,21 +1,18 @@
-<script>
-	import Logo from '$lib/components/molecules/Logo.svelte';
+<script lang="ts">
+	import Logo from '$lib/components/atoms/Logo.svelte';
 	import ThemeToggle from '$lib/components/molecules/ThemeToggle.svelte';
 	import RssLink from '$lib/components/atoms/RssLink.svelte';
 
-	export let animated = true;
 	export let showBackground = false;
-	export let showFullLogo = true;
 </script>
 
 <header class:has-background={showBackground}>
 	<nav class="container">
 		<a class="logo" href="/" aria-label="Site logo">
-			<Logo {animated} {showFullLogo} />
+			<Logo />
 		</a>
 		<div class="links">
 			<a href="/blog">Blog</a>
-			<a href="/resume">Resume</a>
 			<RssLink />
 			<ThemeToggle />
 		</div>
