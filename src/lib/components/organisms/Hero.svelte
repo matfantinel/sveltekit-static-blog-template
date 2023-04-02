@@ -1,28 +1,23 @@
 <script>
 	import ProjectsIcon from '$lib/icons/projects.svelte';
 	import BlogIcon from '$lib/icons/blog.svelte';
-	import ExperienceIcon from '$lib/icons/experience.svelte';
 	import Button from '$lib/components/atoms/Button.svelte';
 </script>
 
 <section id="hero">
-	<h1 class="hello">Hello, I'm Matt!</h1>
+	<h1 class="hello">This is a SvelteKit Static Blog Template!</h1>
 	<p class="intro">
-		<span class="left">I build fun stuff on the web,</span>
-		<span class="right">and sometimes write about it.</span>
+		<span class="left">It supports Markdown,</span>
+		<span class="right">and can be hosted anywhere.</span>
 	</p>
 	<div class="ctas">
-		<Button ref="projects-btn" style="understated" href="#projects">
-			<ProjectsIcon slot="icon" />
-			Projects
-		</Button>
-		<Button ref="blog-btn" href="/blog">
+		<Button href="/blog">
 			<BlogIcon slot="icon" />
-			Blog
+			Blog Posts
 		</Button>
-		<Button ref="experience-btn" style="understated" color="secondary" href="#experience">
-			<ExperienceIcon slot="icon" />
-			Experience
+		<Button style="understated" href="#example">
+			<ProjectsIcon slot="icon" />
+			Example Section
 		</Button>
 	</div>
 </section>
@@ -78,18 +73,5 @@
 				display: none;
 			}
 		}
-	}
-
-	:global([ref='projects-btn']) {
-		order: 1;
-		flex: 0 0 180px;
-	}
-	:global([ref='blog-btn']) {
-		order: 2;
-		flex: 0 0 180px;
-	}
-	:global([ref='experience-btn']) {
-		order: 3;
-		flex: 0 0 180px;
 	}
 </style>
