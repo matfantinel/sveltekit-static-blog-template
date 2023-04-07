@@ -14,13 +14,11 @@
 			autem provident quam labore, libero beatae praesentium voluptate?
 		</p>
 		<div class="socials">
-			<span>My socials:</span>
+			<span>Socials:</span>
 			<Socials />
 		</div>
 	</div>
-	<div class="image">
-		<img src="/images/sample-image.png" alt="Sample for the static template" />
-	</div>
+	<img class="image" src="/images/sample-image.png" alt="Sample for the static template" />
 </section>
 
 <style lang="scss">
@@ -77,10 +75,7 @@
 		.image {
 			width: 220px;
 			height: 220px;
-			position: relative;
-			display: flex;
-			align-items: center;
-			justify-content: center;
+			object-fit: contain;
 		}
 	}
 </style>
