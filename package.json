@@ -42,12 +42,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/barlow": "^4.5.9",
-		"@fontsource/carlito": "^4.5.3",
 		"@fontsource/inter": "^4.5.15",
 		"@fontsource/merriweather": "^4.5.14",
-		"@fontsource/ubuntu-mono": "^4.5.11",
-		"@fontsource/urbanist": "^4.5.17",
-		"@fontsource/youngserif": "^4.5.2"
+		"@fontsource/ubuntu-mono": "^4.5.11"
 	}
 }
