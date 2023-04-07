@@ -13,6 +13,10 @@ export type TagType = {
   color?: 'primary' | 'secondary'
 }
 
+export type SocialLink = {
+  
+}
+
 export type Project = {
   name: string,
   description: string,

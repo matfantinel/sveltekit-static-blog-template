@@ -10,8 +10,11 @@
 @import '$lib/scss/_code-highlights.scss';
 @import '$lib/scss/animations.scss';
 
-@import '@fontsource/youngserif';
-@import '@fontsource/barlow';
+@import '@fontsource/inter';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+@import '@fontsource/merriweather';
+@import '@fontsource/merriweather/900.css';
 @import '@fontsource/ubuntu-mono';
 
 body {

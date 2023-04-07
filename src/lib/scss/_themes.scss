@@ -1,13 +1,13 @@
 @import '$lib/scss/_mixins.scss';
 
 @mixin base-theme {
-	@include define-color('primary', #0ca4a5);
-	@include define-color('primary-shade', #95caca);
-	@include define-color('primary-tint', #e3ffff);
+	@include define-color('primary', #6E29E7);
+	@include define-color('primary-shade', #b28cf2);	
+	@include define-color('primary-tint', #f9f6fe);
 
-	@include define-color('secondary', #7058f5);
-	@include define-color('secondary-shade', #b3aae6);
-	@include define-color('secondary-tint', #f0f1fe);
+	@include define-color('secondary', #ff571a);
+	@include define-color('secondary-shade', #ffa280);
+	@include define-color('secondary-tint', #fff8f5);
 
 	@include define-color('yellow', #ffd400);
 
@@ -19,14 +19,6 @@
 	@include define-color('page-background', #f4f8fb);
 	@include define-color('post-page-background', #f3fbfc);
 	@include define-color('card-background', #ffffff);
-
-	// Used for highlights in Work Experience
-	@include define-color('usefulgroup-tint', #f8e6a0);
-	@include define-color('agora-tint', #eadbff);
-	@include define-color('freelancer-tint', #bcebeb);
-	@include define-color('logitix-tint', #ffe2ce);
-	@include define-color('sige-tint', #cce4ff);
-	@include define-color('promob-tint', #d7e6eb);
 
 	// Used for Callout component
 	@include define-color('callout-background', #f4f8fb);
@@ -53,13 +45,13 @@
 }
 
 @mixin dark-theme {
-	@include define-color('primary', #00c2c2);
-	@include define-color('primary-shade', #076464);
-	@include define-color('primary-tint', #191f1f);
+	@include define-color('primary', #9f67ff);
+	@include define-color('primary-shade', #4612A1);	
+	@include define-color('primary-tint', #231934);
 
-	@include define-color('secondary', #ec7dff);
-	@include define-color('secondary-shade', #b15ebf);
-	@include define-color('secondary-tint', #191a29);
+	@include define-color('secondary', #ff723f);
+	@include define-color('secondary-shade', #AB3307);
+	@include define-color('secondary-tint', #1b1918);
 
 	@include define-color('yellow', #ffd400);
 
