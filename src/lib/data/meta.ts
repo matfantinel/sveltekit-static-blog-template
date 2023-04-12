@@ -5,16 +5,17 @@
 export const siteBaseUrl = 'https://fantinel.dev';
 
 export const keywords = [
-	'Matheus Fantinel',
-	'Matt Fantinel',
-	'Web Development',
-	'Software Engineer',
-	'Open Source'
+	'Svelte',
+	'SvelteKit',
+	'Template',
+	'Blog',
+	'Starter',
+	'Static Site'
 ];
 
 export const description =
-	"I'm a developer aiming to build things that spark joy. I build fun stuff on the web, and sometimes write about it.";
+	"A light, neat, and easy-to-use SvelteKit template for your next website.";
 
-export const title = 'Matt Fantinel';
+export const title = 'SvelteKit Static Blog Template';
 
 export const image = `${siteBaseUrl}/images/site-preview.png`;

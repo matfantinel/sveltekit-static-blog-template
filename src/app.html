@@ -28,54 +28,17 @@
 			color="#0ca4a5"
 		/>
 		<link rel="shortcut icon" href="%sveltekit.assets%/favicons/favicon.ico" />
-		<link rel="icon" href="%sveltekit.assets%/favicons/favicon.svg" />
+		<link rel="icon" href="%sveltekit.assets%/favicons/favicon.png" />
 
 		<!-- Tell browser this site is responsive -->
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!-- Tell browser this site supports light and dark mode -->
 		<meta name="color-scheme" content="light dark" />
 		<!-- Color for browser url bar in mobile/Safari -->
-		<meta name="theme-color" media="(prefers-color-scheme: light)" content="#C2E6E9" />
-		<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#163F45" />
+		<meta name="theme-color" media="(prefers-color-scheme: light)" content="#b28cf2" />
+		<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#4612A1" />
 		<!-- Disable Google FLOC -->
 		<meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
-
-		<!-- Twitter stuff -->
-		<meta name="author" content="Matt Fantinel" />
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:creator" content="@Matt_Fantinel" />
-
-		<!-- Plausible - ethical analytics -->
-		<script
-			async
-			defer
-			data-domain="fantinel.dev"
-			src="https://stats.fantinel.dev/js/index.js"
-		></script>
-		<script>
-			window.plausible =
-				window.plausible ||
-				function () {
-					(window.plausible.q = window.plausible.q || []).push(arguments);
-				};
-		</script>
-
-		<script>
-			// The script below uses Plausible to track the % of people that have a dark/light mode preference
-			// But it breaks the Bounce Rate metrics
-			if (plausible) {
-				if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-					plausible('Dark Mode Enabled');
-				} else if (
-					window.matchMedia &&
-					window.matchMedia('(prefers-color-scheme: light)').matches
-				) {
-					plausible('Light Mode Enabled');
-				} else {
-					plausible('No Dark/Light Preference');
-				}
-			}
-		</script>
 
 		<script>
 			// Calling this here so that it loads as quickly as possible

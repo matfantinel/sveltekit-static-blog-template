@@ -17,24 +17,13 @@ export type SocialLink = {
   
 }
 
-export type Project = {
+export type Feature = {
   name: string,
   description: string,
-  image: Srcset,
+  image: string,
   link?: string,
   sourceCode?: string,
   blogPostLink?: string,
-  tags: TagType[]
-}
-
-export type ExperienceEntry = {
-  companySlug: string,
-  company: string,
-  jobTitle: string,
-  timeframe: string,
-  current?: boolean,
-  location: string,
-  description: string,
   tags: TagType[]
 }
 

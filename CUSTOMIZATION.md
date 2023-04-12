@@ -31,3 +31,7 @@ The main theme colors (primary and secondary) have two variants: shade and tint.
 This template uses the Inter, Merriweather and Ubuntu Mono font families. You can change the font family by editing the `_variables.scss` file, and the code is already set up to accept a default font, a heading font, and a monospace font.
 
 I recommend using [Fontsource](https://fontsource.org/) to import the fonts you need, or self-hosting them. In case you're using Fontsource, you can import the fonts in `global.scss` file to make sure they're available in the entire site.
+
+## Favicon
+
+Favicons are located in the `static/favicons` folder. I like to use [Real Favicon Generator](https://realfavicongenerator.net) to generate mine, but you can use any other tool you like. I wrote [a blog post about Favicons](https://fantinel.dev/fixing-favicons) in case you want to learn more about them.

@@ -1,5 +1,5 @@
 <script>
-	import ProjectsIcon from '$lib/icons/projects.svelte';
+	import FeaturesIcon from '$lib/icons/features.svelte';
 	import BlogIcon from '$lib/icons/blog.svelte';
 	import Button from '$lib/components/atoms/Button.svelte';
 </script>
@@ -15,9 +15,9 @@
 			<BlogIcon slot="icon" />
 			Blog Posts
 		</Button>
-		<Button style="understated" href="#example">
-			<ProjectsIcon slot="icon" />
-			Example Section
+		<Button style="understated" href="#features">
+			<FeaturesIcon slot="icon" />
+			Features
 		</Button>
 	</div>
 </section>

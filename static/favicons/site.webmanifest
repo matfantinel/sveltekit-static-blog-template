@@ -1,6 +1,6 @@
 {
-	"name": "Matt Fantinel",
-	"short_name": "Matt Fantinel",
+	"name": "SvelteKit Static Blog Template",
+	"short_name": "SvelteKit Template",
 	"icons": [
 		{
 			"src": "/favicons/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
 			"type": "image/png"
 		}
 	],
-	"theme_color": "#f0ffff",
-	"background_color": "#f0ffff",
+	"theme_color": "#f9f6fe",
+	"background_color": "#f9f6fe",
 	"display": "standalone"
 }
