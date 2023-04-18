@@ -1,45 +1,21 @@
 <script lang="ts">
-	import ExternalLink from '$lib/icons/external-link.svelte';
-	import Github from '$lib/icons/socials/github.svelte';
-	import Button from '$lib/components/atoms/Button.svelte';
 	import Card from '$lib/components/atoms/Card.svelte';
 	import Tag from '$lib/components/atoms/Tag.svelte';
-	import type { Srcset, TagType } from '$lib/utils/types';
-	import SrcsetImage from '$lib/components/atoms/SrcsetImage.svelte';
+	import type { TagType } from '$lib/utils/types';
 
 	export let name: string;
 	export let description: string;
 	export let image: string;
-	export let link: string | undefined;
-	export let sourceCode: string | undefined;
-	export let blogPostLink: string | undefined;
 	export let tags: TagType[] | undefined;
 </script>
 
 <Card>
-	<!-- <SrcsetImage srcset={image} slot="image" alt="Screenshot of {name}" /> -->
+	<img src={image} slot="image" alt="Picture describing the {name} feature" />
 	<div class="content" slot="content">
 		<div class="title">
 			<span>{name}</span>
-			<div class="links">
-				{#if sourceCode}
-					<a href={sourceCode} target="_blank" rel="noopener noreferrer" title="Open Source Code">
-						<Github />
-					</a>
-				{/if}
-				{#if link}
-					<a href={link} target="_blank" rel="noopener noreferrer" title="Open Project">
-						<ExternalLink />
-					</a>
-				{/if}
-			</div>
 		</div>
 		<p>{description}</p>
-		{#if blogPostLink}
-			<Button ref="blog-post-btn" href={blogPostLink} style="understated" color="secondary"
-				>Read Blog Post</Button
-			>
-		{/if}
 	</div>
 	<div class="footer" slot="footer">
 		{#if tags && tags.length > 0}
@@ -71,24 +47,6 @@
 		font-weight: 700;
 	}
 
-	.links {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: 15px;
-
-		a {
-			width: 30px;
-			height: 30px;
-			padding: 3px;
-			color: var(--color--secondary);
-
-			&:hover {
-				filter: drop-shadow(0px 0px 3px var(--color--secondary));
-			}
-		}
-	}
-
 	.tags {
 		display: flex;
 		align-items: center;
@@ -98,10 +56,5 @@
 
 	.footer {
 		margin-top: 20px;
-	}
-
-	:global([ref='blog-post-btn']) {
-		min-width: 220px;
-		margin: 10px auto 0;
 	}
 </style>

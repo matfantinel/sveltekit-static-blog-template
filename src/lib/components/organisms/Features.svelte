@@ -18,9 +18,6 @@
 					name={feature.name}
 					description={feature.description}
 					image={feature.image}
-					link={feature.link}
-					sourceCode={feature.sourceCode}
-					blogPostLink={feature.blogPostLink}
 					tags={feature.tags}
 				/>
 			{/each}

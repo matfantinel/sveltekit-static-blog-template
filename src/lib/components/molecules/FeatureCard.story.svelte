@@ -13,10 +13,7 @@
 				name="Feature Name"
 				description="Doggo ipsum very taste wow doge noodle horse wow very biscit, woofer. Puggorino you are doin me a concern long doggo woofer borkdrive length boy, shoob long water shoob ur givin me a spook."
 				image="https://placedog.net/500"
-				link="#"
-				sourceCode="#"
-				blogPostLink="#"
-				tags={[{ label: 'Tag 1' }, { label: 'Tag 2', color: 'secondary' }]}
+				tags={[{ label: 'Wow!' }, { label: 'Very cool!', color: 'secondary' }]}
 			/>
 		</Hst.Variant>
 	</div>

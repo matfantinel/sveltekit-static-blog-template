@@ -3,8 +3,6 @@
 	import Socials from '$lib/components/molecules/Socials.svelte';
 	import ThemeToggle from '$lib/components/molecules/ThemeToggle.svelte';
 	import RssLink from '$lib/components/atoms/RssLink.svelte';
-
-	let currentYear = new Date().getFullYear();
 </script>
 
 <footer>

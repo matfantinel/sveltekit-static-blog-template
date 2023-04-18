@@ -30,6 +30,7 @@
 		grid-template-columns: 500px 250px;
 		align-items: center;
 		justify-content: space-between;
+		padding-bottom: 50px;
 
 		@include for-phone-only {
 			grid-template-columns: 1fr;
