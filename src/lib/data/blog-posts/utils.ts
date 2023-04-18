@@ -57,7 +57,6 @@ const getRelatedPosts = (posts: BlogPost[], post: BlogPost) => {
   // Get the first 3 posts that share the same category and the highest number of tags in common
   const relatedPosts = posts
     .filter((p) => p.slug !== post.slug)
-    .filter((p) => p.categories.some((c) => post.categories.includes(c)))
     .sort((a, b) => {
       const aTags = a.tags.filter((t) => post.tags.includes(t));
       const bTags = b.tags.filter((t) => post.tags.includes(t));

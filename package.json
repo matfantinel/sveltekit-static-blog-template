@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev --host",
-		"build": "vite build",
+		"build": "vite build && jampack ./build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
@@ -13,9 +13,10 @@
 		"story:dev": "histoire dev",
 		"story:build": "histoire build",
 		"story:preview": "histoire preview",
-		"postbuild": "svelte-sitemap --out-dir .vercel/output/static --domain https://fantinel.dev"
+		"postbuild": "svelte-sitemap --domain https://fantinel.dev"
 	},
 	"devDependencies": {
+		"@divriots/jampack": "^0.9.4",
 		"@histoire/plugin-svelte": "^0.12.4",
 		"@sveltejs/adapter-static": "^2.0.1",
 		"@sveltejs/kit": "^1.0.0",

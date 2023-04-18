@@ -9,8 +9,8 @@
 
 <ContentSection
 	id="recent-posts"
-	title="Latest posts"
-	description="Every now and then I write about something I'm interested about."
+	title="Blog posts"
+	description="This section shows the 4 most recent blog posts. Check them out for tips on how to get started!"
 	align="left"
 >
 	<div slot="button">
@@ -23,7 +23,6 @@
 				title={post.title}
 				excerpt={post.excerpt}
 				tags={post.tags}
-				categories={post.categories}
 				readingTime={post.readingTime}
 				showImage={false}
 			/>

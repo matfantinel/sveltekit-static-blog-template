@@ -26,7 +26,6 @@ export type Feature = {
 
 export type BlogPost = {
   tags: string[],
-  categories: string[],
   keywords: string[],
   hidden: boolean,
   slug: string,
@@ -37,12 +36,5 @@ export type BlogPost = {
   html: string | undefined,
   readingTime: string,
   relatedPosts: BlogPost[],
-  coverImage: Srcset | undefined,
-  hideCoverImage: boolean
-}
-
-export type Srcset = {
-  avif?: string,
-  webp?: string,
-  png?: string
+  coverImage: string | undefined
 }

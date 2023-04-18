@@ -18,7 +18,6 @@
 				title={post.title}
 				excerpt={post.excerpt}
 				tags={post.tags}
-				categories={post.categories}
 				readingTime={post.readingTime}
 				showImage={false}
 			/>

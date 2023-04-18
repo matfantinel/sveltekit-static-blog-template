@@ -7,7 +7,6 @@
 	import { keywords, siteBaseUrl, title } from '$lib/data/meta';
 	import type { BlogPost } from '$lib/utils/types';
 	import RelatedPosts from '$lib/components/organisms/RelatedPosts.svelte';
-	import SrcsetImage from '$lib/components/atoms/SrcsetImage.svelte';
 
 	export let data: { post: BlogPost };
 	$: ({ post } = data);
@@ -15,9 +14,6 @@
 	let metaKeywords = keywords;
 
 	$: {
-		if (post?.categories?.length) {
-			metaKeywords = post.categories.concat(metaKeywords);
-		}
 		if (post?.tags?.length) {
 			metaKeywords = post.tags.concat(metaKeywords);
 		}
@@ -41,14 +37,14 @@
 		<meta name="twitter:title" content="{post.title} - {title}" />
 
 		{#if post.coverImage}
-			<meta property="og:image" content="{siteBaseUrl}{post.coverImage.png}" />
-			<meta name="twitter:image" content="{siteBaseUrl}{post.coverImage.png}" />
+			<meta property="og:image" content="{siteBaseUrl}{post.coverImage}" />
+			<meta name="twitter:image" content="{siteBaseUrl}{post.coverImage}" />
 		{/if}
 	{/if}
 </svelte:head>
 
 <div class="article-layout">
-	<Header animated={false} showBackground />
+	<Header showBackground />
 
 	<main>
 		<article id="article-content">
@@ -62,23 +58,18 @@
 					{#if post.readingTime}
 						<div class="note">{post.readingTime}</div>
 					{/if}
-					{#if post.categories?.length || post.tags?.length}
+					{#if post.tags?.length}
 						<div class="tags">
-							{#if post.categories?.length}
-								<Tag color="secondary">{post.categories[0]}</Tag>
-							{/if}
-							{#if post.tags?.length}
-								{#each post.tags as tag}
-									<Tag>{tag}</Tag>
-								{/each}
-							{/if}
+							{#each post.tags as tag}
+								<Tag>{tag}</Tag>
+							{/each}
 						</div>
 					{/if}
 				{/if}
 			</div>
-			{#if post && !post.hideCoverImage && post.coverImage}
+			{#if post && post.coverImage}
 				<div class="cover-image">
-					<SrcsetImage srcset={post.coverImage} alt="Cover Image" />
+					<img src={post.coverImage} alt={post.title} />
 				</div>
 			{/if}
 			<div class="content">
@@ -161,6 +152,12 @@
 			max-height: 400px;
 			box-shadow: var(--image-shadow);
 			border-radius: 6px;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
 		}
 
 		.tags {

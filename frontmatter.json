@@ -17,6 +17,12 @@
           "type": "string"
         },
         {
+          "title": "Cover Image",
+          "name": "coverImage",
+          "type": "image",
+          "isPreviewImage": true
+        },
+        {
           "title": "Excerpt",
           "name": "excerpt",
           "type": "string"
@@ -40,19 +46,9 @@
           "type": "draft"
         },
         {
-          "title": "Hide Cover Image",
-          "name": "hideCoverImage",
-          "type": "boolean"
-        },
-        {
           "title": "Tags",
           "name": "tags",
           "type": "tags"
-        },
-        {
-          "title": "Categories",
-          "name": "categories",
-          "type": "categories"
         },
         {
           "title": "Keywords",
@@ -71,23 +67,6 @@
     }
   ],
   "frontMatter.taxonomy.tags": [
-    "Analytics",
-    "Back-End",
-    "CSS",
-    "Common Errors",
-    "Ethics",
-    "Front-End",
-    "Games",
-    "Guide",
-    "Open Source",
-    "Personal",
-    "Ramble",
-    "Recap",
-    "Review",
-    "Svelte"
-  ],
-  "frontMatter.taxonomy.categories": [
-    "Misc",
-    "Tech"
+    "Documentation"
   ]
 }
