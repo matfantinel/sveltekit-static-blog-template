@@ -14,8 +14,6 @@
 		target,
 		rel
 	};
-
-	console.log($$slots.image)
 </script>
 
 <svelte:element
