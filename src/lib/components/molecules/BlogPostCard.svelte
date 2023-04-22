@@ -25,9 +25,11 @@
 		{#if readingTime}
 			<div class="note">{readingTime}</div>
 		{/if}
-		<p class="text">
-			{excerpt}
-		</p>
+		{#if excerpt}
+			<p class="text">
+				{excerpt}
+			</p>
+		{/if}
 	</div>
 	<div class="footer" slot="footer">
 		{#if tags?.length}

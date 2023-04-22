@@ -9,7 +9,6 @@
 <ContentSection
 	id="related-posts"
 	title="Related Posts"
-	description="Have some time? Feel free to read some other posts by me."
 >
 	<div class="simple-grid">
 		{#each posts as post}

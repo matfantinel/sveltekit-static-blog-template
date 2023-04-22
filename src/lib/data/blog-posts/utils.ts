@@ -58,9 +58,9 @@ const getRelatedPosts = (posts: BlogPost[], post: BlogPost) => {
   const relatedPosts = posts
     .filter((p) => p.slug !== post.slug)
     .sort((a, b) => {
-      const aTags = a.tags.filter((t) => post.tags.includes(t));
-      const bTags = b.tags.filter((t) => post.tags.includes(t));
-      return aTags.length > bTags.length ? -1 : aTags.length < bTags.length ? 1 : 0;
+      const aTags = a.tags?.filter((t) => post.tags?.includes(t));
+      const bTags = b.tags?.filter((t) => post.tags?.includes(t));
+      return aTags?.length > bTags?.length ? -1 : aTags?.length < bTags?.length ? 1 : 0;
     })
   
   return relatedPosts.slice(0, 3).map((p) => ({

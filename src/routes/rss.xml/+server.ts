@@ -29,7 +29,7 @@ const xml = (posts: BlogPost[]) => `
 	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
 >
   <channel>
-    <atom:link href="http://wwww.fantinel.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="${siteBaseUrl}/rss.xml" rel="self" type="application/rss+xml" />
     <title>${title}</title>
     <link>${siteBaseUrl}</link>
     <description>${description}</description>
@@ -62,8 +62,8 @@ const xml = (posts: BlogPost[]) => `
 
             ${post.html}
           ]]></content:encoded>
-          ${post.coverImage ? `<media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="${siteBaseUrl}/${post.coverImage.png}"/>` : ''}
-          ${post.coverImage ? `<media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="${siteBaseUrl}/${post.coverImage.png}"/>` : ''}          
+          ${post.coverImage ? `<media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="${siteBaseUrl}/${post.coverImage}"/>` : ''}
+          ${post.coverImage ? `<media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="${siteBaseUrl}/${post.coverImage}"/>` : ''}          
         </item>
       `
     )
