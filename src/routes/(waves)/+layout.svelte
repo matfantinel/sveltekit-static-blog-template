@@ -20,11 +20,13 @@
 
 	<meta property="og:image" content={image} />
 	<meta name="twitter:image" content={image} />
+
+	<meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <Waves />
 
-<Header showFullLogo={true} />
+<Header />
 
 <main>
 	<slot />

@@ -3,7 +3,7 @@
 A lightweight and customizable template for blogs and portfolio websites, built with SvelteKit.
 
 <p align="center">
-    <img src="src/lib/images/projects/personal-website-transparent.png" alt="Screenshot" />
+    <img src="src/lib/images/site-screenshot.png" alt="Screenshot" />
 </p>
 
 It was built with a few goals in mind:
