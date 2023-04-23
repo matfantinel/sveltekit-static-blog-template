@@ -13,7 +13,7 @@
 		"story:dev": "histoire dev",
 		"story:build": "histoire build",
 		"story:preview": "histoire preview",
-		"postbuild": "svelte-sitemap --domain https://fantinel.dev"
+		"postbuild": "svelte-sitemap --domain https://sveltekit-static-blog-template.vercel.app/"
 	},
 	"devDependencies": {
 		"@divriots/jampack": "^0.9.4",

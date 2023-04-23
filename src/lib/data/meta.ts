@@ -2,7 +2,7 @@
 // So they can be added as suffixes on different pages
 // Via <svelte:head>
 
-export const siteBaseUrl = 'https://fantinel.dev';
+export const siteBaseUrl = 'https://sveltekit-static-blog-template.vercel.app/';
 
 export const keywords = [
 	'Svelte',

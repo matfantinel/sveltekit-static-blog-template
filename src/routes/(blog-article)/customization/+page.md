@@ -10,6 +10,13 @@ tags:
 
 In general, content can be modified by editing the **organisms** and the pages themselves. Below is a list of the most common changes that you may want to make.
 
+## Domain/site URL
+
+The first thing you might want to do is replace the domain of of the site with your own. There are two places where you need to do that:
+
+- In the `package.json` file, check the `postbuild` script. Change the domain there to your own, so it ends up like this: `svelte-sitemap --domain https://your-domain.com`. This is used to generate the sitemap of your website, which is used by search engines to index your site.
+- In the `src/lib/data/meta.ts` file, change the `siteBaseUrl` property to your own domain. This is used in multiple parts of the app wherever the site needs to link to itself.
+
 ## Header/site logo
 
 To replace the logo that appears in the header, modify or replace the contents of the `Logo.svelte` atom.
