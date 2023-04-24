@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev --host",
-		"build": "vite build && jampack ./build",
+		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
@@ -13,7 +13,7 @@
 		"story:dev": "histoire dev",
 		"story:build": "histoire build",
 		"story:preview": "histoire preview",
-		"postbuild": "svelte-sitemap --domain https://sveltekit-static-blog-template.vercel.app/"
+		"postbuild": "jampack ./build && svelte-sitemap --domain https://sveltekit-static-blog-template.vercel.app/"
 	},
 	"devDependencies": {
 		"@divriots/jampack": "^0.9.4",
@@ -38,8 +38,7 @@
 		"svelte-check": "^2.9.2",
 		"svelte-sitemap": "^2.5.4",
 		"typescript": "^4.9.3",
-		"vite": "^4.1.1",
-		"vite-imagetools": "^4.0.17"
+		"vite": "^4.1.1"
 	},
 	"type": "module",
 	"dependencies": {
