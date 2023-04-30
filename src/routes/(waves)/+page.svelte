@@ -15,6 +15,8 @@
 	import features from '$lib/data/features';
 	import { filteredPosts } from '$lib/data/blog-posts';
 	const posts = filteredPosts.slice(0, 4);
+	
+	console.log(features)
 </script>
 
 <div class="container">

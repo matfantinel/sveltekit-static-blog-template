@@ -6,7 +6,7 @@ import Prism from 'prismjs';
 // is not removed automatically on build
 const ifYouRemoveMeTheBuildFails = Prism;
 import 'prism-svelte';
-import readingTime from 'reading-time';
+import readingTime from 'reading-time/lib/reading-time';
 import striptags from 'striptags';
 import type { BlogPost } from "$lib/utils/types";
 
@@ -22,7 +22,7 @@ export const importPosts = (render = false) => {
     if (post) {
       posts.push({
         ...post.metadata,
-        html: render ? post.default.render()?.html : undefined,
+        html: render && post.default.render ? post.default.render()?.html : undefined,
       });
     }
   }
@@ -54,7 +54,7 @@ export const filterPosts = (posts: BlogPost[]) => {
 // #region Unexported Functions
 
 const getRelatedPosts = (posts: BlogPost[], post: BlogPost) => {
-  // Get the first 3 posts that share the same category and the highest number of tags in common
+  // Get the first 3 posts that have the highest number of tags in common
   const relatedPosts = posts
     .filter((p) => p.slug !== post.slug)
     .sort((a, b) => {
@@ -62,7 +62,7 @@ const getRelatedPosts = (posts: BlogPost[], post: BlogPost) => {
       const bTags = b.tags?.filter((t) => post.tags?.includes(t));
       return aTags?.length > bTags?.length ? -1 : aTags?.length < bTags?.length ? 1 : 0;
     })
-  
+
   return relatedPosts.slice(0, 3).map((p) => ({
     ...p,
     readingTime: p.html ? readingTime(striptags(p.html) || '').text : '',
