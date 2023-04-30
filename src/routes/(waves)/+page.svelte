@@ -5,18 +5,12 @@
 	import Features from '$lib/components/organisms/Features.svelte';
 	import type { Feature, BlogPost } from '$lib/utils/types';
 
-	// export let data: {
-	// 	features: Feature[];
-	// 	posts: BlogPost[];
-	// };
+	export let data: {
+		features: Feature[];
+		posts: BlogPost[];
+	};
 
-	// let { features, posts } = data;
-
-	import features from '$lib/data/features';
-	import { filteredPosts } from '$lib/data/blog-posts';
-	const posts = filteredPosts.slice(0, 4);
-	
-	console.log(features)
+	let { features, posts } = data;
 </script>
 
 <div class="container">
