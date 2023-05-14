@@ -11,6 +11,7 @@ tags:
 <script>
   import Callout from "$lib/components/molecules/Callout.svelte";
   import CodeBlock from "$lib/components/molecules/CodeBlock.svelte";
+  import Image from "$lib/components/atoms/Image.svelte";
 </script>
 
 All blog posts are located inside the `src/routes/(blog-article)` folder. Each folder inside it represents a blog post, and each folder has a `+page.md` file, which is the file that contains the post's content.
@@ -57,9 +58,9 @@ tags:
 
 I highly recommend the [Front Matter VS Code extension](https://frontmatter.codes/) to manage blog posts. It gives you a nice CMS-like UI to manage the front matter of all blog posts, as well as a preview of their content. It is, of course, optional, and you can manage everything directly in the Markdown files if you prefer.
 
-![Screenshot of the Front Matter VS Code extension, showing the dashboard with all posts](/images/posts/frontmatter-preview-dashboard.png)
+<Image src="/images/posts/frontmatter-preview-dashboard.png" alt="Screenshot of the Front Matter VS Code extension, showing the dashboard with all posts" />
 
-![Screenshot of the Front Matter VS Code extension, showing the post editing UI](/images/posts/frontmatter-preview-edit.png)
+<Image src="/images/posts/frontmatter-preview-edit.png" alt="Screenshot of the Front Matter VS Code extension, showing the post editing UI" />
 
 ## RSS
 

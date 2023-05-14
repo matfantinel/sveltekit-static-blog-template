@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Card from '$lib/components/atoms/Card.svelte';
 	import Tag from '$lib/components/atoms/Tag.svelte';
+	import Image from '../atoms/Image.svelte';
 
 	export let title: string;
 	export let coverImage: string | undefined = undefined;
@@ -15,9 +16,13 @@
 <Card
 	href="/{slug}"
 	target="_self"
-	additionalClass="blog-post-card {(!showImage || !coverImage) && 'no-image'}"
+	additionalClass="blog-post-card {!showImage || !coverImage ? 'no-image' : ''}"
 >
-	<img src={coverImage} slot="image" alt="Cover image of this blog post" aria-hidden={!coverImage} />
+	<div class="image" slot="image">
+		{#if coverImage}
+			<Image src={coverImage} alt="Cover image of this blog post" />
+		{/if}
+	</div>
 	<div class="content" slot="content">
 		<p class="title">
 			{title}
@@ -80,6 +85,10 @@
 
 	.footer {
 		margin-top: 20px;
+	}
+
+	:global(.blog-post-card .image img) {
+		object-fit: cover;
 	}
 
 	:global(.blog-post-card.no-image > .image) {

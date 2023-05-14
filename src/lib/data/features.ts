@@ -26,7 +26,7 @@ export default [
     description:
       'Images are automatically optimized and lazy loaded, to ensure the website loads as fast as possible regardless of connection speed.',
     image: 'images/features/optimized.jpg',
-    tags: [{ label: 'Powered by Jampack' }]
+    tags: [{ label: 'Powered by Image Transmutation' }]
   }, 
   {
     name: 'Light and Dark Modes',

@@ -1,6 +1,7 @@
 <script>
 	import SparklingHighlight from '$lib/components/molecules/SparklingHighlight.svelte';
 	import Socials from '$lib/components/molecules/Socials.svelte';
+	import Image from '../atoms/Image.svelte';
 </script>
 
 <section id="about">
@@ -18,7 +19,12 @@
 			<Socials />
 		</div>
 	</div>
-	<img class="image" src="/images/sample-image.png" alt="Sample for the static template" />
+	<div class="image">
+		<Image
+			src="/images/sample-image.png"
+			alt="Sample for the static template"
+		/>
+	</div>
 </section>
 
 <style lang="scss">
@@ -76,7 +82,6 @@
 		.image {
 			width: 220px;
 			height: 220px;
-			object-fit: contain;
 		}
 	}
 </style>

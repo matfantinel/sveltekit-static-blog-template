@@ -1,6 +1,6 @@
 {
 	"name": "sveltekit-static-blog-template",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev --host",
@@ -13,10 +13,10 @@
 		"story:dev": "histoire dev",
 		"story:build": "histoire build",
 		"story:preview": "histoire preview",
-		"postbuild": "jampack ./build && svelte-sitemap --domain https://sveltekit-static-blog-template.vercel.app/"
+		"optimize-images": "image-transmutation --run --sourceFolder './build/images' --targetFolder './build/images' --inputFormats 'jpg' --inputFormats 'jpeg' --inputFormats 'png' --outputFormats 'png' --outputFormats 'webp' --outputFormats 'avif'",
+		"postbuild": "npm run optimize-images && svelte-sitemap --domain https://sveltekit-static-blog-template.vercel.app/"
 	},
 	"devDependencies": {
-		"@divriots/jampack": "^0.9.4",
 		"@histoire/plugin-svelte": "^0.16.1",
 		"@sveltejs/adapter-static": "^2.0.1",
 		"@sveltejs/kit": "^1.0.0",
@@ -25,6 +25,7 @@
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
 		"histoire": "^0.16.1",
+		"image-transmutation": "^0.1.0",
 		"mdsvex": "^0.10.6",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.8.1",

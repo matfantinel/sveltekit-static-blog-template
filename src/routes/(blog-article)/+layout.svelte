@@ -7,6 +7,7 @@
 	import { keywords, siteBaseUrl, title } from '$lib/data/meta';
 	import type { BlogPost } from '$lib/utils/types';
 	import RelatedPosts from '$lib/components/organisms/RelatedPosts.svelte';
+	import Image from '$lib/components/atoms/Image.svelte';
 
 	export let data: { post: BlogPost };
 	$: ({ post } = data);
@@ -69,7 +70,7 @@
 			</div>
 			{#if post && post.coverImage}
 				<div class="cover-image">
-					<img src={post.coverImage} alt={post.title} />
+					<Image src={post.coverImage} alt={post.title} />
 				</div>
 			{/if}
 			<div class="content">
@@ -158,6 +159,10 @@
 				height: 100%;
 				object-fit: cover;
 			}
+		}
+
+		:global(.cover-image img) {
+			object-fit: cover;
 		}
 
 		.tags {

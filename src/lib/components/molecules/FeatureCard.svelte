@@ -2,6 +2,7 @@
 	import Card from '$lib/components/atoms/Card.svelte';
 	import Tag from '$lib/components/atoms/Tag.svelte';
 	import type { TagType } from '$lib/utils/types';
+	import Image from '../atoms/Image.svelte';
 
 	export let name: string;
 	export let description: string;
@@ -9,8 +10,10 @@
 	export let tags: TagType[] | undefined;
 </script>
 
-<Card>
-	<img src={image} slot="image" alt="Picture describing the {name} feature" />
+<Card additionalClass="feature-card">
+	<div class="image" slot="image">
+		<Image src={image} alt="Picture describing the {name} feature" />
+	</div>
 	<div class="content" slot="content">
 		<div class="title">
 			<span>{name}</span>
@@ -56,5 +59,9 @@
 
 	.footer {
 		margin-top: 20px;
+	}
+
+	:global(.feature-card .image img) {
+		object-fit: cover;
 	}
 </style>
