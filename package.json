@@ -16,7 +16,7 @@
 		"optimize-images": "image-transmutation --run --sourceFolder './build/images' --targetFolder './build/images' --inputFormats 'jpg' --inputFormats 'jpeg' --inputFormats 'png' --outputFormats 'png' --outputFormats 'webp' --outputFormats 'avif'",
 		"postbuild": "npm run optimize-images && svelte-sitemap --domain https://sveltekit-static-blog-template.vercel.app/",
 		"vercel-sitemap": "svelte-sitemap --out-dir .vercel/output/static --domain https://sveltekit-static-blog-template.vercel.app/",
-		"vercel-optimize-images": "image-transmutation --run --sourceFolder 'vercel/output/static/images' --targetFolder '.vercel/output/static/images' --inputFormats 'jpg' --inputFormats 'jpeg' --inputFormats 'png' --outputFormats 'png' --outputFormats 'webp' --outputFormats 'avif'",
+		"vercel-optimize-images": "image-transmutation --run --sourceFolder '.vercel/output/static/images' --targetFolder '.vercel/output/static/images' --inputFormats 'jpg' --inputFormats 'jpeg' --inputFormats 'png' --outputFormats 'png' --outputFormats 'webp' --outputFormats 'avif'",
 		"vercel-build": "npm run build && npm run vercel-sitemap && npm run vercel-optimize-images"
 	},
 	"devDependencies": {
