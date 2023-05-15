@@ -28,7 +28,7 @@
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
 		"histoire": "^0.16.1",
-		"image-transmutation": "^0.1.0",
+		"image-transmutation": "^0.1.2",
 		"mdsvex": "^0.10.6",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.8.1",
