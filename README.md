@@ -38,7 +38,7 @@ I've used [Histoire](https://histoire.dev), a Vite-based Storybook alternative t
 
 # Image Optimization
 
-This website uses [image-transmutation]([https://jampack.divriots.com/](https://github.com/matfantinel/image-transmutation)) to automatically optimize images used in the site. This means that even if you use non-optimal image formats (like lossless PNGs), it will go over the images and convert images to WebP and AVIF for you, as long as you use the `<Image />` component instead of `<img />`. This is done on build, so it doesn't change anything when running the website locally.
+This website uses [image-transmutation](https://github.com/matfantinel/image-transmutation) to automatically optimize images used in the site. This means that even if you use non-optimal image formats (like lossless PNGs), it will go over the images and convert images to WebP and AVIF for you, as long as you use the `<Image />` component instead of `<img />`. This is done on build, so it doesn't change anything when running the website locally.
 
 # Managing Posts
 
