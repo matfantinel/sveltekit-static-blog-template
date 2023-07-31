@@ -38,7 +38,7 @@ To create a new post, create a new folder inside the `src/routes/(blog-article)`
 
 Inside the `+page.md` file, you must start with the front matter, which is a YAML-like syntax that is used to define metadata for the post. The front matter must be the first thing in the file, and must be separated from the rest of the content by three dashes (`---`). An example of a front matter is:
 
-<CodeBlock lang="markdown">
+<CodeBlock lang="markdown" fullBleed>
 
 ```md
 ---
@@ -58,9 +58,9 @@ tags:
 
 I highly recommend the [Front Matter VS Code extension](https://frontmatter.codes/) to manage blog posts. It gives you a nice CMS-like UI to manage the front matter of all blog posts, as well as a preview of their content. It is, of course, optional, and you can manage everything directly in the Markdown files if you prefer.
 
-<Image src="/images/posts/frontmatter-preview-dashboard.png" alt="Screenshot of the Front Matter VS Code extension, showing the dashboard with all posts" />
+<Image fullBleed src="/images/posts/frontmatter-preview-dashboard.png" alt="Screenshot of the Front Matter VS Code extension, showing the dashboard with all posts" />
 
-<Image src="/images/posts/frontmatter-preview-edit.png" alt="Screenshot of the Front Matter VS Code extension, showing the post editing UI" />
+<Image fullBleed src="/images/posts/frontmatter-preview-edit.png" alt="Screenshot of the Front Matter VS Code extension, showing the post editing UI" />
 
 ## RSS
 
