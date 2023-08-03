@@ -58,9 +58,9 @@ tags:
 
 I highly recommend the [Front Matter VS Code extension](https://frontmatter.codes/) to manage blog posts. It gives you a nice CMS-like UI to manage the front matter of all blog posts, as well as a preview of their content. It is, of course, optional, and you can manage everything directly in the Markdown files if you prefer.
 
-<Image src="/images/posts/frontmatter-preview-dashboard.png" alt="Screenshot of the Front Matter VS Code extension, showing the dashboard with all posts" />
+<Image fullBleed src="/images/posts/frontmatter-preview-dashboard.png" alt="Screenshot of the Front Matter VS Code extension, showing the dashboard with all posts" />
 
-<Image src="/images/posts/frontmatter-preview-edit.png" alt="Screenshot of the Front Matter VS Code extension, showing the post editing UI" />
+<Image fullBleed src="/images/posts/frontmatter-preview-edit.png" alt="Screenshot of the Front Matter VS Code extension, showing the post editing UI" />
 
 ## RSS
 
