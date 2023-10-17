@@ -1,9 +1,9 @@
 ---
-title: Stoney
-slug: stoney
+title: How Blog Posts Work
+slug: blog-posts
 coverImage: /images/posts/blog-posts.jpg
 date: 2023-04-22T21:55:15.361Z
-excerpt: How to manage your website
+excerpt: How to manage existing blog posts and create new ones
 tags:
   - Documentation
 ---
@@ -14,7 +14,7 @@ tags:
   import Image from "$lib/components/atoms/Image.svelte";
 </script>
 
-Hello this is a test from Jawad. All blog posts are located inside the `src/routes/(blog-article)` folder. Each folder inside it represents a blog post, and each folder has a `+page.md` file, which is the file that contains the post's content.
+All blog posts are located inside the `src/routes/(blog-article)` folder. Each folder inside it represents a blog post, and each folder has a `+page.md` file, which is the file that contains the post's content.
 
 This way, the URL for each blog post is generated with the folder's name. For example, the folder `src/routes/(blog-article)/how-blog-posts-work` will generate the URL `https://mysite.com/how-blog-posts-work`.
 

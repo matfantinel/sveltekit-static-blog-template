@@ -6,10 +6,9 @@
 </script>
 
 <section id="hero">
-	<h1 class="hello">This is a SvelteKit Static Blog Template!</h1>
+	<h1 class="hello">Artificial Intelligence for your company</h1>
 	<p class="intro">
-		<span class="left">It supports Markdown,</span>
-		<span class="right">and is really fast.</span>
+		<span class="left">Award Winning Digital Agency</span>
 	</p>
 	<div class="ctas">
 		<Sparkles>

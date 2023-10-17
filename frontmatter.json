@@ -65,8 +65,5 @@
       "title": "posts",
       "path": "[[workspace]]/src/routes/(blog-article)"
     }
-  ],
-  "frontMatter.taxonomy.tags": [
-    "Documentation"
   ]
 }

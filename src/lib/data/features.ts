@@ -1,33 +1,68 @@
 import type { Feature } from "$lib/utils/types";
 
-export default [ 
+export default [
+  {
+    name: 'AI / ML',
+    description:
+      'We empower computers to learn from data, make predictions or decisions, and perform tasks without explicit instructions.',
+    image: 'images/features/markdown.jpg',
+    tags: [{ label: 'Powered by Hubun' }]
+  },
+  {
+    name: 'Computer Vision',
+    description:
+      'We enable computers to interpret visual information from images or videos, emulating human visual perception.',
+    image: 'images/features/markdown.jpg',
+    tags: [{ label: 'Powered by Hubun' }]
+  },
+  {
+    name: 'NLP',
+    description:
+      'We build systems so machines may understand human language in a way that is both meaningful and contextually appropriate.',
+    image: 'images/features/markdown.jpg',
+    tags: [{ label: 'Powered by Hubun' }]
+  },
   {
     name: 'Markdown Support',
     description:
       'Blog posts are written in Markdown, a simple and nearly-universal format. This means you can bring over your posts from other platforms, and easily export to another if you want to.',
     image: 'images/features/markdown.jpg',
     tags: [{ label: 'Powered by MDsveX' }]
-  }, 
+  },
+  {
+    name: 'Markdown Support',
+    description:
+      'Blog posts are written in Markdown, a simple and nearly-universal format. This means you can bring over your posts from other platforms, and easily export to another if you want to.',
+    image: 'images/features/markdown.jpg',
+    tags: [{ label: 'Powered by MDsveX' }]
+  },
+  {
+    name: 'Markdown Support',
+    description:
+      'Blog posts are written in Markdown, a simple and nearly-universal format. This means you can bring over your posts from other platforms, and easily export to another if you want to.',
+    image: 'images/features/markdown.jpg',
+    tags: [{ label: 'Powered by MDsveX' }]
+  },
   {
     name: 'Themeable',
     description:
       'You can easily theme the entire website by changing just a few colors in the _themes.scss file.',
     image: 'images/features/themeable.jpg',
     tags: [{ label: 'Primary Color' }, { label: 'Secondary Color', color: 'secondary' }]
-  }, 
+  },
   {
     name: 'Extensible',
     description:
       'Components are built to be reused, and you can build new pages and layouts without much CSS knowledge. You can see all components in Histoire by running "npm run story:dev"',
     image: 'images/features/extensible.jpg',
-  }, 
+  },
   {
     name: 'Well Optimized',
     description:
       'Images are automatically optimized and lazy loaded, to ensure the website loads as fast as possible regardless of connection speed.',
     image: 'images/features/optimized.jpg',
     tags: [{ label: 'Powered by Image Transmutation' }]
-  }, 
+  },
   {
     name: 'Light and Dark Modes',
     description:

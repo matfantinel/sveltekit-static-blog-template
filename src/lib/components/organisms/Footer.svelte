@@ -11,10 +11,10 @@
 	</div>
 	<div class="content">
 		<div class="copyright">
-			This template was built by <a
+			This website was built by <a
 				href="https://fantinel.dev?utm_source=site-template"
 				target="_blank"
-				rel="noopener noreferrer">Matheus Fantinel</a
+				rel="noopener noreferrer">Jawad Joya</a
 			>.
 		</div>
 		<div class="credits">
