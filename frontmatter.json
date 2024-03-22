@@ -15,7 +15,8 @@
 				{
 					"title": "Slug",
 					"name": "slug",
-					"type": "string"
+					"type": "string",
+          "default": "{{slug}}"
 				},
 				{
 					"title": "Cover Image",
