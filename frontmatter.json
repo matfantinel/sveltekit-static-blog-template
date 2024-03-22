@@ -1,72 +1,72 @@
 {
-  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
-  "frontMatter.taxonomy.contentTypes": [
-    {
-      "name": "default",
-      "pageBundle": false,
-      "previewPath": null,
-      "fields": [
-        {
-          "title": "Title",
-          "name": "title",
-          "type": "string"
-        },
-        {
-          "title": "Slug",
-          "name": "slug",
-          "type": "string"
-        },
-        {
-          "title": "Cover Image",
-          "name": "coverImage",
-          "type": "image",
-          "isPreviewImage": true
-        },
-        {
-          "title": "Excerpt",
-          "name": "excerpt",
-          "type": "string"
-        },
-        {
-          "title": "Publishing date",
-          "name": "date",
-          "type": "datetime",
-          "default": "{{now}}",
-          "isPublishDate": true
-        },
-        {
-          "title": "Last modified date",
-          "name": "updated",
-          "type": "datetime",
-          "isModifiedDate": true
-        },
-        {
-          "title": "Is hidden",
-          "name": "hidden",
-          "type": "draft"
-        },
-        {
-          "title": "Tags",
-          "name": "tags",
-          "type": "tags"
-        },
-        {
-          "title": "Keywords",
-          "name": "keywords",
-          "type": "list"
-        }
-      ]
-    }
-  ],
-  "frontMatter.framework.id": "other",
-  "frontMatter.content.publicFolder": "",
-  "frontMatter.content.pageFolders": [
-    {
-      "title": "posts",
-      "path": "[[workspace]]/src/routes/(blog-article)"
-    }
-  ],
-  "frontMatter.taxonomy.tags": [
-    "Documentation"
-  ]
+	"$schema": "https://frontmatter.codes/frontmatter.schema.json",
+	"frontMatter.taxonomy.contentTypes": [
+		{
+			"name": "default",
+			"previewPath": null,
+			"defaultFileName": "+page",
+      "pageBundle": true,
+			"fields": [
+				{
+					"title": "Title",
+					"name": "title",
+					"type": "string"
+				},
+				{
+					"title": "Slug",
+					"name": "slug",
+					"type": "string"
+				},
+				{
+					"title": "Cover Image",
+					"name": "coverImage",
+					"type": "image",
+					"isPreviewImage": true
+				},
+				{
+					"title": "Excerpt",
+					"name": "excerpt",
+					"type": "string"
+				},
+				{
+					"title": "Publishing date",
+					"name": "date",
+					"type": "datetime",
+					"default": "{{now}}",
+					"isPublishDate": true
+				},
+				{
+					"title": "Last modified date",
+					"name": "updated",
+					"type": "datetime",
+					"isModifiedDate": true
+				},
+				{
+					"title": "Is hidden",
+					"name": "hidden",
+					"type": "draft",
+          "default": false
+				},
+				{
+					"title": "Tags",
+					"name": "tags",
+					"type": "tags"
+				},
+				{
+					"title": "Keywords",
+					"name": "keywords",
+					"type": "list"
+				}
+			]
+		}
+	],
+	"frontMatter.framework.id": "other",
+	"frontMatter.content.publicFolder": "",
+	"frontMatter.content.pageFolders": [
+		{
+			"title": "posts",
+			"path": "[[workspace]]/src/routes/(blog-article)",
+      "filePrefix": null
+		}
+	]
 }
